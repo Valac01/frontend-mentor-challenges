@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./static/styles.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <script src="./static/main.js" defer></script>
+</head>
+<body>
+  <main>
+    <!-- Rating state start -->
+    <div id="rating-card" class="card" data-visible="true">
+      <div class="card__image card--icon">
+        <img src="./images/icon-star.svg" alt="icon of a star">
+      </div>
+      <h1 class="card__title">
+        How did we do?
+      </h1>
+      <div class="card__content">
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div class="card__actions">
+        <form id="rating-form">
+          <div>
+            <input type="radio" name="rating" id="1" value="1">
+            <label for="1" class="card--icon">1</label>
+            <input type="radio" name="rating" id="2" value="2">
+            <label for="2" class="card--icon">2</label>
+            <input type="radio" name="rating" id="3" value="3">
+            <label for="3" class="card--icon">3</label>
+            <input type="radio" name="rating" id="4" value="4">
+            <label for="4" class="card--icon">4</label>
+            <input type="radio" name="rating" id="5" value="5">
+            <label for="5" class="card--icon">5</label>
+          </div>
+          <button type="submit" class="btn btn--primary">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div id="thankyou-card" class="card card--center" data-visible="false">
+      <div class="card__image">
+        <img src="./images/illustration-thank-you.svg" alt="illustration indicating a transaction process">
+      </div>
+      <p class="card__subtitle">
+        You selected <span id="rating-placeholder"></span> out of 5
+      </p>
+      <h1 class="card__title">
+        Thank you!
+      </h1>
+      <div class="card__content">
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+    <!-- Thank you state end -->
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Valac01" target="_blank" rel="noopener noreferrer">Barish Barla</a>.
+  </footer>
+</body>
+</html>
